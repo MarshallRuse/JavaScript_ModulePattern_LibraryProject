@@ -1,0 +1,67 @@
+.jumbotron {
+    text-align: center;
+}
+
+#title {
+    text-align: center;
+}
+
+button {
+    width: 100px;
+    height: 40px;
+}
+
+.close-button {
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    padding: 2px;
+    margin-bottom: 2px;
+    float: right;
+}
+
+.read-button {
+    color: white;
+    text-align: center;
+    border-radius: 2px;
+    float: right;
+}
+
+.read {
+    background-color: green;
+}
+
+.not-read {
+    background-color: red;
+}
+
+#bookDisplay li {
+    list-style-type: none;
+}
+
+#addBookDisplay {
+    display: none;
+    margin: 10px;
+}
+
+#addBookDisplay input[type=text] {
+    margin: 2px;
+    width: 100%;
+}
+
+#submitBtn {
+    height: 40px;
+    width: 100px;
+    color: white;
+    margin: 5px;
+    background-color: green;
+}
+
+#cancelBtn {
+    height: 40px;
+    width: 100px;
+    color: white;
+    margin: 5px;
+    background-color: red;
+}
+
