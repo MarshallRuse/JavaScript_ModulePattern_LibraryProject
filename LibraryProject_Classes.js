@@ -79,7 +79,7 @@ var BookShelf = (() => {
 		let readButton = "<button class='read-button " + readButtonCSS + "'>" + readButtonVal + "</button>";
 		let list = document.querySelector("#bookDisplay");
 		list.innerHTML += "<div class='row'>" +
-			"<div class='col-md-4 col-md-offset-4'>" +
+			"<div class='col-xs-4 col-xs-offset-4'>" +
 			"<li data-book-index='" + Library.findBook(book.title) + "'>" +
 			"<div class='panel panel-primary'>" +
 			"<div class='panel panel-heading'>" + 
@@ -98,8 +98,9 @@ var BookShelf = (() => {
 	}
 
 	const formSubmission = (submitEvent) => {
-		submitEvent.preventDefault();
 		console.log("formSubmission this: " + this);
+		submitEvent.preventDefault();
+		
 		let bookTitle = addBookForm.querySelector("#bookTitle").value;
 		let bookAuthor = addBookForm.querySelector("#bookAuthor").value;
 		let bookPages = addBookForm.querySelector("#bookPages").value;
@@ -135,8 +136,9 @@ var addListeners = (() => {
 	
 	//Add Book Form
 	let addBookForm = document.querySelector("#addBookForm");
-	addBookForm.querySelector("#submitBtn").addEventListener("submit", BookShelf.formSubmission);
+	addBookForm.querySelector("#submitBtn").addEventListener("click", BookShelf.formSubmission);
 	addBookForm.querySelector("#cancelBtn").addEventListener("click", function(e){
+		e.preventDefault();
 		document.querySelector("#addBookDisplay").style.display = "none";
 	});
 

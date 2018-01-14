@@ -1,3 +1,7 @@
+body {
+    font-family: "Luminari", fantasy, "Times New Roman", serif;
+}
+
 .jumbotron {
     text-align: center;
 }
@@ -16,7 +20,7 @@ button {
     width: 30px;
     height: 30px;
     padding: 2px;
-    margin-bottom: 2px;
+    margin: auto;
     float: right;
 }
 
@@ -47,6 +51,10 @@ button {
 #addBookDisplay input[type=text] {
     margin: 2px;
     width: 100%;
+}
+
+#addBookButton {
+
 }
 
 #submitBtn {

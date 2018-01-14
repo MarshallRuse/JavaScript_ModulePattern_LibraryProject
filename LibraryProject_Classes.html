@@ -20,28 +20,30 @@
 	<div class="container-fluid">
 		<ul id="bookDisplay">
 		</ul>	
-		<div class="row">
-	<div class="col-md-4 col-md-offset-4" id="addBookDisplay">
-		<form id="addBookForm">
-			<fieldset>
-				<legend>Add a Book</legend>
-				Title <input type="text" name="bookTitle" id="bookTitle" placeholder="Title" required><br>
-				Author <input type="text" name="bookAuthor" id="bookAuthor" placeholder="Author" required><br>
-				Pages <input type="text" name="bookPages" id="bookPages"><br>
-				Read Yet? <input type="radio" name="bookRead" value="Yes" required>Yes
-				<input type="radio" name="bookRead" value="No">No<br>
-				<input type="submit" name="submitBtn" id="submitBtn" value="Add!">
-				<button id="cancelBtn">Cancel</button>
-			</fieldset>
-		</form>
+	<div class="row">
+		<div class="col-xs-4 col-xs-offset-4" id="addBookDisplay">
+			<form id="addBookForm">
+				<fieldset>
+					<legend>Add a Book</legend>
+					Title <input type="text" name="bookTitle" id="bookTitle" placeholder="Title" required><br>
+					Author <input type="text" name="bookAuthor" id="bookAuthor" placeholder="Author" required><br>
+					Pages <input type="text" name="bookPages" id="bookPages"><br>
+					Read Yet? <input type="radio" name="bookRead" value="Yes" required>Yes
+					<input type="radio" name="bookRead" value="No">No<br>
+					<button id="submitBtn">Add!</button>
+					<button id="cancelBtn">Cancel</button>
+				</fieldset>
+			</form>
+		</div>
 	</div>
-</div>
-</div>
+
 		
-	<div>
-		<button id="addBookButton">Add Book</button>
+	<div class="row">
+		<div class="col-xs-4 col-xs-offset-5">
+			<button id="addBookButton">Add Book</button>
+		</div>
 	</div>
-	
+	</div>	
 
 </body>
 <script
